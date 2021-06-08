@@ -4,27 +4,78 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <!--Title of website-->
+        <title>D A Y S</title>
+        <style>
+            canvas{
+                box-shadow: white 20px 20x 20px 20px;
+            }
+
+        </style>
+        <link rel="icon" href="C:\Users\jacee\Downloads\logo.png" type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
     </head>
-
     <body>
-       <!-- Changing the colour of text -->
-        <h1 style="background-color: rgb(253, 123, 242);text-align: center;">MY RETRO GAME</h1>
+
+        <br>
+
+        <!--Title/image-->
+        <img class="center" src="days new font.png" 
+        alt="Death is at your Side" width="500" height="200">
+        <br>
+        <img style="width:600px;height:100px;"class="center" src="cbjd.png" 
+        alt="Created by Jacee Diaz"
+        width="600" height="100">
+
+        <br>
+        <br> 
+
+       <!--Description-->
+        <p style="text-align: center;">"Death is at your side" is a game specifically <br> made 
+            for anyone looking for a quick and easy to understand game in their free time. <br>
+         Enjoy!</p>
+            
+        <p1></p1>
+        
+        <!--Canvas details-->
+        <canvas id="canvas", width="900", height="400"></canvas>
+    
+        <br> <br> <br> <br> <br> <br>
 
         <!-- Paragraph -->
-        <p>This is my game.</p>
-
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <h3 style="text-align: center;">Instructions</h3>
+        <p style="text-align: center;">1. Use the arrow keys to move the character left, right, up, and down.</p>
+        <p style="text-align: center;">2. Eat the blocks and try not to hit the sides!</p>
+        <p style="text-align: center;">3. Survive, Strive, Remember, DEATH IS AT YOUR SIDE...</p>
+            
             <br> 
             <br>
-            <!-- Making a button -->
-        <button onclick="myFunction()"><a href="https://www.w3schools.com">Visit W3Schools</a></button>
-    
 
-        
+        <!--Making a comment section-->
+        <div id="respond"> 
+        <h3>Comments/Suggestions</h3>  
+        <form action="post_comment.php" method="post" id="commentform">
+
+        <h4><label for="comment_author" class="required">Your name</label></h4>
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1"
+        required="required">
+
+        <h4><label for="comment" class="required">Your comment</label></h4>
+        <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+        <!-- Adding submit comment button -->
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+    <h4><input name="submit" type="submit" value="Submit comment" /></h4>
+
+    <br>
+    <br>
+
+    </form>
+        </div>
+
         <script src="index.js" async defer></script>
     </body>
 </html>
+
