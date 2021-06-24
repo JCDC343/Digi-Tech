@@ -1,100 +1,77 @@
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/* Canvas border color (game) */
-canvas{ 
-  border: 5px solid white;
-}
-
 /* Colour and font of "Description" and Instruction steps text */
 p {
-    color: ghostwhite;
-    font-family: 'Courier New', Courier, monospace;
+  color: ghostwhite;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*Canvas used for game*/
+canvas {
+border:1px solid #d3d3d3;
+background-color: #f1f1f1;
+}
+
+/*Centering canvas*/
+canvas {
+padding-left: 0;
+padding-right: 0;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+/* Colour and font of "Instructions" text */
+h3 {
+  color: ghostwhite;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Placement for "Comment Section" boxes */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-
-/* Colour and font of "Instructions" text */
-h3 {
-    color: ghostwhite;
-    font-family: 'Courier New', Courier, monospace;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 90%;
 }
 
 /* Colour of Labels in Comment Section */
 label {
-    color: ghostwhite;
+  color: ghostwhite;
 }
 
 /* Colour and font of Components in Comment Section */
 h4 {
-    margin-left: 1px;
-    font-family: "Monaco", Monaco , Monospace;
+  margin-left: 1px;
+  font-family: "Monaco", Monaco , Monospace;
 }
 
 /* Placement of Respond Box */
-  #respond {
-    margin-top: 40px;
-    margin-left: 60px;
-  }
-  
+#respond {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
 /* Input into Comment Section and Placements */
-  #respond input[type='text'],
-  #respond input[type='email'],
-  #respond textarea {
-    margin-bottom: 20px;
-    display: block;
-    width: 40%;
-  
-    border: 10px solid rgb(255, 255, 255);
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -o-border-radius: 70px;
-    -ms-border-radius: 40px;
-    -khtml-border-radius: 60px;
-    border-radius: 2px;
-  
-    line-height: 1.4em;
-  }
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+  margin-bottom: 20px;
+  display: block;
+  width: 40%;
+
+  border: 10px solid rgb(255, 255, 255);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -o-border-radius: 70px;
+  -ms-border-radius: 40px;
+  -khtml-border-radius: 60px;
+  border-radius: 2px;
+
+  line-height: 1.4em;
+}
 
 /* Background Colour of Website */
 body {background-color: rgb(0, 0, 0);
 
-    
+  
 
 }
