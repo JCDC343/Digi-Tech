@@ -1,3 +1,4 @@
+//Game
 var myGamePiece;
 var myObstacle;
 
@@ -70,11 +71,11 @@ function updateGameArea() {
 }
 
 function moveup() {
-    myGamePiece.speedY = -1; 
+    myGamePiece.speedY = -5; 
 }
 
 function movedown() {
-    myGamePiece.speedY = 1; 
+    myGamePiece.speedY = 5; 
 }
 
 function clearmove() {
@@ -82,6 +83,13 @@ function clearmove() {
     myGamePiece.speedY = 0; 
 }
 
+//Keys for game 
+
+
+//Comment submit function
+function sFunction() {
+    alert ("Thanks for your Comment!")
+}
 
 
 
