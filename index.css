@@ -65,14 +65,8 @@ h4 {
   display: block;
   width: 40%;
 
+  /*Size of comment input boxes*/
   border: 10px solid rgb(255, 255, 255);
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -o-border-radius: 70px;
-  -ms-border-radius: 40px;
-  -khtml-border-radius: 60px;
-  border-radius: 2px;
-
   line-height: 1.4em;
 }
 
