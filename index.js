@@ -4,9 +4,10 @@ var myObstacles = [];
 var myScore;
 function startGame() {
     myGamePiece = new component(60, 20, "black", 10, 120);
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("1px", "Courier", "black", 280, 40, "text");
     myGameArea.start();
 }
+//Game placement and measurements
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -21,6 +22,10 @@ var myGameArea = {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 }
+
+//Controls game piece movement
+
+//"Template" for myGamePiece and myScore
 function component(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
@@ -119,6 +124,7 @@ function moveup() {
 
 //Comment submit function
 function sFunction() {
-    alert ("Thanks for your Comment!")
+    alert ("Thanks for your Comment!");
+return true;
 }
 
