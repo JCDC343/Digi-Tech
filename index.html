@@ -85,7 +85,7 @@
         <!--Making a comment section-->
         <div id="respond"> 
         <h3>Comments/Suggestions</h3>  
-        <form action="$myfile = fopen("testfile.txt, method="post" id="commentform">
+        <form name="myForm" action="index.html", method="post" id="commentform">
 
         <h4><label for="comment_author" class="required">Your name</label></h4>
         <input type="text" name="comment_author" id="comment_author" value="" tabindex="1"
@@ -94,8 +94,9 @@
         <h4><label for="comment" class="required">Your comment</label></h4>
         <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
 
-        <!-- Adding submit comment button -->
-        <button onclick="sFunction()">Submit</button>
+        <!-- Submit comment button -->
+        <button onclick="return validateForm()">Submit</button>
+        <!--<input type="submit" value="Submit">-->
 
         <br> <br> <br> <br>
 
