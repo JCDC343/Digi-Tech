@@ -3,8 +3,8 @@ var myGamePiece;
 var myObstacles = []; //an array for whenever myObstacles variable is called
 var myScore;
 function startGame() {
-    myGamePiece = new component(60, 20, "black", 10, 120);
-    myScore = new component("1px", "Courier", "black", 280, 40, "text");
+    myGamePiece = new component(50, 20, "black", 10, 120);
+    myScore = new component("30px", "Courier", "black", 30, 50, "text");
     myGameArea.start(); //starts game
 }
 //Game placement and measurements
@@ -100,6 +100,7 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+//Obstacle measurements
         myObstacles.push(new component(70, height, "red", x, 0));
         myObstacles.push(new component(70, x - height - gap, "red", x, height + gap));
     }
@@ -119,7 +120,7 @@ function everyinterval(n) {
     return false;
 }
 
-//Buttons used to move game piece
+//How my game piece moves
 function moveup() {
         myGamePiece.speedY = -1; 
     }
