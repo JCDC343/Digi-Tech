@@ -47,9 +47,9 @@
         <br>
         <em><strong>("Kei tou taha te mate" he kemu motuhake tenei)</strong></em>
         <br>
-        made for anyone looking for a quick and easy to understand game in their free time.
+        made for anyone looking for a quick and easy to understand game to play for improving hand eye coordination skills in their free time.
         <br>
-        <em><strong>(hangaia mo te tangata e rapu ana i te keemu tere me te maarama ki o raatau waatea.)</strong></em>
+        <em><strong>(i hangaia mo te tangata e rapu ana i tetahi keemu tere me te ngawari ki te mohio ki te takaro hei whakapai ake i nga pukenga ruruku kanohi ringa i roto i o raatau waa waatea.)</strong></em>
         <br>
         Enjoy!
         <br>
@@ -65,9 +65,9 @@
 
 <body onload="startGame()">
 
-        <h5><button onmousedown="moveup(-0.2)" onmouseup="accelerate(0.05)">UP</button></h5>
-        <h5><button onmousedown="movedown(0.2)" onmouseup="decelerate(0.05)">DOWN</button></h5>
-        <p style="text-align: left;">*ctrl r to restart the game</p>
+        <button onmousedown="moveup(-0.2)" onmouseup="accelerate(0.05)">UP</button>
+        <button onmousedown="movedown(0.2)" onmouseup="decelerate(0.05)">DOWN</button>
+        <p>*ctrl r to restart the game</p>
 
         <br> <br>
 
@@ -84,20 +84,17 @@
 
         <!--Making a comment section-->
         <div id="respond"> 
-        <h3>Comments/Suggestions</h3>  
-        <form name="myForm" action="index.html", method="post" id="commentform">
-
-        <h4><label for="comment_author" class="required">Your name</label></h4>
-        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1"
-        required="required">
-
-        <h4><label for="comment" class="required">Your comment</label></h4>
-        <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
-
-        <!-- Submit comment button -->
-        <button onclick="return validateForm()">Submit</button>
-        <!--<input type="submit" value="Submit">-->
-
+            <h3>Comments/Suggestions</h3>  
+            <form name="myForm" action="index.html", method="post" id="commentform">
+            <h4><label for="comment_author" class="required">Your name</label></h4>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1"
+            required="required">
+            <h4><label for="comment" class="required">Your comment</label></h4>
+            <textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+            <!-- Submit comment button -->
+            <button onclick="return validateForm()">Submit</button>
+            <!--<input type="submit" value="Submit">-->
+      
         <br> <br> <br> <br>
 
     </form>

@@ -26,12 +26,6 @@ margin-right: auto;
 display: block;
 }
 
-/*Up and Down button placement*/
-h5 {
-margin-left: 70px;
-display: inline-block;
-}
-
 /* Colour and font of "Instructions" text */
 h3 {
   color: ghostwhite;
@@ -80,4 +74,3 @@ h4 {
 body {background-color: rgb(0, 0, 0);
 
 }
-
