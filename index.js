@@ -2,6 +2,7 @@
 var myGamePiece;
 var myObstacles = []; //an array for whenever myObstacles variable is called
 var myScore;
+var myComments = ["Thanks for your comment!", "Name must be filled out", "Comment must be filled out"]; //an array for comment
 function startGame() {
     myGamePiece = new component(50, 20, "black", 10, 120);
     myScore = new component("30px", "Courier", "black", 30, 50, "text");
@@ -134,25 +135,23 @@ function moveup() {
 
 //Comment submit function
 function sFunction() {
-    alert ("Thanks for your Comment!");
+    alert (myComments[0]);
 return true;
 }
 
 //Validating submit button for comment section
 function validateForm() {
-    let x = document.forms["myForm"]["comment_author"].value;
-    let y = document.forms["myForm"]["comment"].value;
-    if (x == "") {
-      alert("Name must be filled out");
+  let x = document.forms["myForm"]["comment_author"].value;
+  let y = document.forms["myForm"]["comment"].value;
+  if (x == "") {
+    alert(myComments[1]);
+    return false;
+  }
+  if (y == "") {
+      alert(myComments[2]);
       return false;
     }
-    if (y == "") {
-        alert("Comment must be filled out");
-        return false;
-      }
-
 return sFunction();
-
 }
 
 
